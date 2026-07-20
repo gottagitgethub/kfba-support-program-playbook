@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">감태당 온라인 마케팅 성장보드</title>
+  <desc id="desc">서산 감태가 온라인에서 발견되고 오늘 출발하게 만드는 90일 실행안</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#dff0e7"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2c7958"/><stop offset="1" stop-color="#0d3d2f"/></linearGradient>
+    <radialGradient id="snack" cx="35%" cy="28%"><stop stop-color="#f6d67d" offset="0"/><stop stop-color="#ca8d25" offset=".34"/><stop stop-color="#75420d" offset="1"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#123a2d" flood-opacity=".2"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="970" cy="310" r="245" fill="url(#sea)"/>
+  <circle cx="970" cy="310" r="190" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="2"/>
+  <circle cx="970" cy="310" r="130" fill="none" stroke="#fff" stroke-opacity=".15" stroke-width="2"/>
+  <g transform="translate(810 110) rotate(-5 125 165)" filter="url(#shadow)">
+    <rect width="250" height="340" rx="24" fill="#fffaf0" stroke="#d8ccb4" stroke-width="2"/>
+    <path d="M20 22H230" stroke="#d3c5aa" stroke-width="3" stroke-dasharray="8 8"/>
+    <text x="30" y="80" fill="#123a2d" font-size="38" font-weight="800" font-family="sans-serif">감태당</text>
+    <text x="30" y="108" fill="#2d8a61" font-size="14" font-weight="800" letter-spacing="3" font-family="sans-serif">GAMTAE ORANDA</text>
+    <g transform="translate(42 140)">
+      <circle cx="35" cy="35" r="32" fill="url(#snack)"/><circle cx="115" cy="35" r="32" fill="url(#snack)"/>
+      <circle cx="35" cy="115" r="32" fill="url(#snack)"/><circle cx="115" cy="115" r="32" fill="url(#snack)"/>
+    </g>
+    <text x="30" y="310" fill="#4f5c52" font-size="15" font-weight="700" font-family="sans-serif">서산 감태의 바다향을 담은</text>
+    <text x="30" y="332" fill="#4f5c52" font-size="15" font-weight="700" font-family="sans-serif">달콤짭짤 바삭한 로컬 간식</text>
+  </g>
+  <rect x="70" y="72" width="84" height="84" rx="24" fill="#123a2d"/>
+  <text x="112" y="128" text-anchor="middle" fill="#fff" font-size="42" font-weight="800" font-family="sans-serif">감</text>
+  <text x="176" y="104" fill="#173029" font-size="28" font-weight="800" font-family="sans-serif">감태당</text>
+  <text x="176" y="136" fill="#2d8a61" font-size="14" font-weight="800" letter-spacing="3" font-family="sans-serif">MARKETING GROWTH BOARD</text>
+  <text x="70" y="258" fill="#173029" font-size="64" font-weight="800" letter-spacing="-3" font-family="sans-serif">서산 감태가 온라인에서</text>
+  <text x="70" y="340" fill="#2d8a61" font-size="76" font-weight="900" letter-spacing="-4" font-family="sans-serif">발견되고, 오늘 출발하게.</text>
+  <text x="70" y="405" fill="#50635b" font-size="25" font-weight="600" font-family="sans-serif">빠른배송 · Cafe24 × YouTube · 토스쇼핑 · 톡딜 · 당근 · 크리에이터 커머스</text>
+  <g transform="translate(70 470)" font-family="sans-serif" font-size="20" font-weight="800">
+    <rect width="208" height="52" rx="26" fill="#fff" stroke="#d9e1da"/><text x="104" y="34" text-anchor="middle" fill="#173029">20개입 대표상품</text>
+    <rect x="224" width="190" height="52" rx="26" fill="#fff" stroke="#d9e1da"/><text x="319" y="34" text-anchor="middle" fill="#173029">13:00 당일출고</text>
+    <rect x="430" width="220" height="52" rx="26" fill="#fff" stroke="#d9e1da"/><text x="540" y="34" text-anchor="middle" fill="#173029">90일 실행 활동지</text>
+  </g>
+  <text x="70" y="590" fill="#65736d" font-size="18" font-family="sans-serif">온라인몰 운영·매출 증진 컨설팅 · 유정재</text>
+</svg>

@@ -1,0 +1,96 @@
+    <section id="channels" style="background:#f0f5ef">
+      <div class="wrap">
+        <span class="section-label">03 · Channel architecture</span>
+        <div class="section-head"><h2>채널마다 같은 일을 시키지 않습니다.</h2><p>주력 채널은 검색과 리뷰를 모으고, 다른 채널은 신규 고객·콘텐츠·행사·지역 단골이라는 고유 역할을 맡깁니다.</p></div>
+        <div class="channels">
+          <article class="channel featured"><div class="icon">🔎</div><span class="tag">핵심 판매처</span><h3>네이버 스마트스토어</h3><p>‘감태 오란다·오란다 선물세트·답례품’ 검색 수요와 리뷰를 20개입 한 상품에 집중합니다.</p><ul><li>대표상품 1개 + 2박스 묶음 + 단체문의</li><li>첫 이미지에 20개 구성과 당일출고</li><li>광고 전 리뷰·상세페이지·손익 점검</li></ul><div class="kpi">KPI · 검색 유입 / 전환율 / 리뷰 / 광고 주문당 비용</div></article>
+          <article class="channel featured"><div class="icon">▶</div><span class="tag">브랜드·영상 허브</span><h3>Cafe24 × YouTube Shopping</h3><p>Cafe24 상품을 유튜브 영상·Shorts·라이브에 태그하고, 주문·배송·CS를 쇼핑몰 운영 흐름과 연결합니다.</p><ul><li>브랜드 이야기·제조 과정·단체주문 랜딩</li><li>Google 판매자 계정·도메인·상품피드·전환태그 설정</li><li>크리에이터 파트너·특가·제휴수수료는 손익 내에서 테스트</li></ul><a class="source-link" href="https://support.cafe24.com/hc/ko/articles/51038642725017" target="_blank" rel="noopener">Cafe24 유튜브 쇼핑 공식 안내 ↗</a><div class="kpi">KPI · 영상 상품클릭 / 주문 / 크리에이터별 매출</div></article>
+          <article class="channel"><div class="icon">💳</div><span class="tag gold">신규 고객 실험</span><h3>토스쇼핑</h3><p>상품·배송·수익 구조가 안정된 뒤 20개입 한 상품으로 입점·CPC 광고를 소액 테스트합니다.</p><ul><li>최종판매가 = 상품가 + 배송비 − 셀러쿠폰</li><li>광고 클릭 후 7일 내 성과 주문 정책 확인</li><li>가격 경쟁보다 첫 구매 전환 상품으로 활용</li></ul><div class="channel-note">수수료·광고 면제 정책은 변동 가능하므로 집행일 관리자센터 기준으로 재확인합니다.</div><a class="source-link" href="https://shopping-docs.toss.im/ads" target="_blank" rel="noopener">토스쇼핑 광고 공식 안내 ↗</a><div class="kpi">KPI · 신규구매 / CPC / ROAS / 주문당 공헌이익</div></article>
+          <article class="channel"><div class="icon">💬</div><span class="tag gold">기간 한정 행사</span><h3>카카오 톡스토어·톡딜</h3><p>상시 할인 채널이 아니라 무료배송 묶음, 선물세트, 명절 예약판매 같은 ‘이유 있는 기간 한정딜’로 운영합니다.</p><ul><li>카카오톡 채널 연동과 친구 전용 쿠폰</li><li>톡딜 후보: 20개입 2박스·답례품</li><li>딜 종료 후 채널 친구를 재구매로 전환</li></ul><a class="source-link" href="https://kakaobusiness.gitbook.io/main/tool/talkstore/start" target="_blank" rel="noopener">톡스토어 공식 입점 가이드 ↗</a><div class="kpi">KPI · 딜 주문 / 신규 친구 / 30일 재구매</div></article>
+          <article class="channel"><div class="icon">🥕</div><span class="tag gold">하이퍼로컬</span><h3>당근 비즈프로필</h3><p>서산 이웃에게 제조·픽업·단체주문을 알리고 비즈프로필 단골을 ‘로컬 프라이빗 오퍼’로 관리합니다.</p><ul><li>금요일 생산·픽업, 지역 한정 쿠폰</li><li>병원·학원·기업·기관 간식 견적</li><li>개인 중고거래 글이 아닌 공식 비즈프로필 사용</li></ul><a class="source-link" href="https://business.daangn.com/business-profile/about" target="_blank" rel="noopener">당근 비즈프로필 공식 안내 ↗</a><div class="kpi">KPI · 단골 / 채팅 / 픽업 / 지역 단체문의</div></article>
+        </div>
+
+        <div class="panel" style="margin-top:18px">
+          <div class="grid-2">
+            <div><span class="tag">Cafe24 상세페이지 영상</span><h3 style="margin-top:9px">반응형 YouTube 삽입 코드</h3><p class="muted">상품 상세설명 HTML 편집 영역에 넣을 수 있는 기본 예시입니다. <b>VIDEO_ID</b>를 실제 영상 ID로 교체합니다. YouTube Shopping 상품 태그 기능은 별도로 Cafe24·YouTube 계정 연동이 필요합니다.</p></div>
+            <div class="codebox"><button class="copy-code" onclick="copyCode()">코드 복사</button><pre id="youtubeCode">&lt;div style="position:relative;width:100%;padding-top:56.25%;overflow:hidden;border-radius:16px;"&gt;
+  &lt;iframe
+    src="https://www.youtube.com/embed/VIDEO_ID"
+    title="감태당 감태 오란다 소개"
+    style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;</pre></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="creator">
+      <div class="wrap">
+        <span class="section-label">04 · Creator commerce</span>
+        <div class="section-head"><h2>인플루언서는 ‘큰 계정’보다<br>팔리는 장면을 잘 만드는 사람이 먼저입니다.</h2><p>처음부터 거액 협찬을 하지 않습니다. 나노·마이크로 크리에이터에게 시딩하고, 상품 클릭과 쿠폰 주문이 확인된 콘텐츠만 유료 확대합니다.</p></div>
+        <div class="creator-funnel">
+          <article class="funnel-step"><span class="tag">발굴</span><strong>30</strong><h4>후보 계정</h4><p>전통간식·로컬푸드·답례품·육아간식·사무실간식·충남 여행 콘텐츠 중심</p></article>
+          <article class="funnel-step"><span class="tag">시딩</span><strong>10</strong><h4>제품 제공</h4><p>20개입과 촬영 가이드 제공. 리뷰 강요 없이 광고·제품제공 표시</p></article>
+          <article class="funnel-step"><span class="tag">검증</span><strong>3</strong><h4>성과 콘텐츠</h4><p>완시율, 저장, 상품클릭, 전용코드 주문, 콘텐츠 재사용 권한 평가</p></article>
+          <article class="funnel-step"><span class="tag">확대</span><strong>1–2</strong><h4>제휴·광고</h4><p>YouTube Shopping 상품 태그, 파트너 특가, 성과형 수수료 또는 파트너십 광고</p></article>
+        </div>
+        <div class="content-cards">
+          <article class="content-card"><small>HOOK 01 · 0–2초</small><h3>바삭 소리부터<br>들려주세요.</h3><p>봉지를 열고 반으로 깨는 ASMR → 감태 결 → 20개 구성 → 구매 링크</p></article>
+          <article class="content-card"><small>HOOK 02 · 신뢰</small><h3>오후 1시,<br>오늘 나가는 주문.</h3><p>실제 포장·송장·집하 장면으로 ‘당일출고’를 증명하는 15초 영상</p></article>
+          <article class="content-card"><small>HOOK 03 · 사용상황</small><h3>20명이 나눠 먹는<br>서산 로컬 간식.</h3><p>사무실·행사·답례·부모님 선물 장면과 단체주문 상담 CTA</p></article>
+        </div>
+        <div class="grid-3" style="margin-top:16px">
+          <article class="card"><span class="num">A</span><h3>콘텐츠 브리프</h3><p>필수 장면 3개, 금지 표현, 제품 사실, 링크·코드, 게시기한, 2차 활용 범위를 한 장으로 합의합니다.</p></article>
+          <article class="card"><span class="num">B</span><h3>성과 추적</h3><p>크리에이터별 UTM 또는 전용 쿠폰을 부여하고 조회수보다 주문당 공헌이익으로 판단합니다.</p></article>
+          <article class="card"><span class="num">C</span><h3>광고 공개</h3><p>제품 제공·원고료·수수료 등 경제적 이해관계를 콘텐츠 시작 부분과 설명란에 명확히 표시합니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:#edf5ef">
+      <div class="wrap">
+        <span class="section-label">05 · Hyperlocal private offer</span>
+        <div class="section-head"><h2>‘프라이빗 마케팅’은<br>로컬 단골에게 맞춤 혜택을 주는 방식으로.</h2><p>당근 비즈프로필과 카카오톡 채널을 공개 유입 창구로 쓰고, 구매 이력과 관심 상황에 따라 한정 혜택을 다르게 제안합니다.</p></div>
+        <div class="crm-map"><div class="crm-node"><span>🥕</span><strong>서산 이웃 발견</strong><small>당근 소식·지역광고·픽업</small></div><div class="arrow">→</div><div class="crm-node"><span>🛍️</span><strong>첫 구매</strong><small>20개입·오늘출고·리뷰</small></div><div class="arrow">→</div><div class="crm-node"><span>💬</span><strong>단골 CRM</strong><small>카카오 채널·재구매·단체견적</small></div></div>
+        <div class="offer-grid">
+          <article class="offer"><span class="tag">첫 구매</span><h4>서산 이웃 체험 오퍼</h4><p>한정 기간·실제 수량 기준의 첫 구매 혜택. 할인보다 픽업·배송비·샘플 혜택을 우선 검토합니다.</p></article>
+          <article class="offer"><span class="tag">재구매</span><h4>단골 전용 선공개</h4><p>명절 선물세트와 신제품을 일반 공개 48시간 전에 채널 친구·당근 단골에게 안내합니다.</p></article>
+          <article class="offer"><span class="tag">B2B</span><h4>기관·기업 프라이빗 견적</h4><p>수량, 납기, 포장, 스티커, 증빙 조건을 받은 뒤 공개가가 아닌 개별 견적을 제공합니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="wrap">
+        <span class="section-label">06 · 90-day roadmap</span>
+        <div class="section-head"><h2>90일 동안<br>세 단계만 완성합니다.</h2><p>체크한 항목은 이 브라우저에 자동 저장됩니다. 마지막에 ‘공유용 링크 만들기’를 누르면 체크 상태와 합의 메모가 URL에 담깁니다.</p></div>
+        <div class="roadmap action-checks">
+          <article class="phase"><div class="phase-top"><span class="tag">DAY 1–30</span><b>기초</b></div><h3>팔릴 준비</h3><p>대표상품, 손익, 배송, 상세페이지를 고정합니다.</p><div class="checklist">
+            <div class="task"><input id="r1" type="checkbox"><label for="r1"><b>20개입 히어로 SKU 확정</b></label></div>
+            <div class="task"><input id="r2" type="checkbox"><label for="r2"><b>전체 변동비 포함 손익표</b></label></div>
+            <div class="task"><input id="r3" type="checkbox"><label for="r3"><b>13시 당일출고 SLA 공개</b></label></div>
+            <div class="task"><input id="r4" type="checkbox"><label for="r4"><b>사진·상세페이지·FAQ 개선</b></label></div>
+            <div class="task"><input id="r5" type="checkbox"><label for="r5"><b>기존 고객 리뷰 요청 동선</b></label></div>
+          </div></article>
+          <article class="phase"><div class="phase-top"><span class="tag">DAY 31–60</span><b>검증</b></div><h3>콘텐츠 실험</h3><p>숏폼·당근·소액 광고로 구매 이유를 검증합니다.</p><div class="checklist">
+            <div class="task"><input id="r6" type="checkbox"><label for="r6"><b>숏폼 12개 게시</b></label></div>
+            <div class="task"><input id="r7" type="checkbox"><label for="r7"><b>크리에이터 10명 시딩</b></label></div>
+            <div class="task"><input id="r8" type="checkbox"><label for="r8"><b>당근 비즈프로필 4주 운영</b></label></div>
+            <div class="task"><input id="r9" type="checkbox"><label for="r9"><b>스마트스토어 소액 광고</b></label></div>
+            <div class="task"><input id="r10" type="checkbox"><label for="r10"><b>단체주문 랜딩·상담 양식</b></label></div>
+          </div></article>
+          <article class="phase"><div class="phase-top"><span class="tag">DAY 61–90</span><b>확장</b></div><h3>성과 채널 확대</h3><p>팔린 콘텐츠와 상품만 토스·톡딜·YouTube로 확대합니다.</p><div class="checklist">
+            <div class="task"><input id="r11" type="checkbox"><label for="r11"><b>Cafe24·YouTube Shopping 연결</b></label></div>
+            <div class="task"><input id="r12" type="checkbox"><label for="r12"><b>톡딜 후보 묶음상품 테스트</b></label></div>
+            <div class="task"><input id="r13" type="checkbox"><label for="r13"><b>토스쇼핑 1개 상품 테스트</b></label></div>
+            <div class="task"><input id="r14" type="checkbox"><label for="r14"><b>성과 크리에이터 재계약</b></label></div>
+            <div class="task"><input id="r15" type="checkbox"><label for="r15"><b>재구매 메시지 자동화</b></label></div>
+          </div></article>
+        </div>
+        <div class="done-meter"><div class="done-meta"><span>전체 실행 완료율</span><strong id="doneText">0%</strong></div><div class="done-line"><i id="doneBar"></i></div></div>
+      </div>
+    </section>

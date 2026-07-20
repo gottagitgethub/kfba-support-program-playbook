@@ -1,0 +1,61 @@
+집하·송장·재고 기준을 표준화해 고객 신뢰로 바꿉니다.</p></div>
+        <div class="shipping-board">
+          <article class="speed-card">
+            <span class="tag">1단계 · 즉시 실행</span><div class="time">13:00</div><h3>평일 결제 완료 건 당일출고</h3><p>상품명, 대표이미지, 상세페이지 첫 화면, 장바구니 안내에 같은 기준을 반복합니다.</p>
+            <div class="sla"><div class="sla-row"><b>당일출고 준수율</b><div class="progress"><i style="width:98%"></i></div></div><div class="sla-row"><b>재고 정확도</b><div class="progress"><i style="width:99%"></i></div></div><div class="sla-row"><b>24시간 내 CS</b><div class="progress"><i style="width:95%"></i></div></div></div>
+            <div class="notice" style="margin-top:20px"><b>권장 문구</b><br>“평일 오후 1시 이전 결제 완료 시 당일 택배 발송”<br><small>택배사 사정·도서산간·공휴일 예외를 함께 표시합니다.</small></div>
+          </article>
+          <article class="speed-card">
+            <span class="tag gold">운영 체크</span><h3>배송 SLA를 먼저 고정합니다</h3>
+            <div class="checklist action-checks">
+              <div class="task"><input id="ship1" type="checkbox"><label for="ship1"><b>평일 집하 마감시간 확인</b><span>택배기사 방문시간에서 최소 60분 여유 확보</span></label></div>
+              <div class="task"><input id="ship2" type="checkbox"><label for="ship2"><b>20개입 안전재고 설정</b><span>광고·톡딜 전 최소 2~3일 판매분 별도 확보</span></label></div>
+              <div class="task"><input id="ship3" type="checkbox"><label for="ship3"><b>송장 등록 마감 시각 고정</b><span>출고 처리와 실제 인계 시점을 일치</span></label></div>
+              <div class="task"><input id="ship4" type="checkbox"><label for="ship4"><b>파손·습기 포장 테스트</b><span>완충, 밀봉, 장마·여름철 품질 기준 기록</span></label></div>
+              <div class="task"><input id="ship5" type="checkbox"><label for="ship5"><b>지연 안내 템플릿 준비</b><span>품절·폭설·택배 지연 시 선제 안내</span></label></div>
+            </div>
+            <div class="notice red" style="margin-top:17px"><b>중요</b> 토스쇼핑 공식 가이드상 ‘오늘 출고’ 표시는 준비 중 기능으로 고객에게 아직 노출되지 않는다고 안내되어 있습니다. 토스 입점 시점에 관리자센터에서 다시 확인하고, 확인 전에는 상품 자체 문구로만 정확히 고지합니다.</div>
+            <a class="source-link" href="https://shopping-docs.toss.im/shopping-operations/order/delivery" target="_blank" rel="noopener">토스쇼핑 배송 공식 가이드 ↗</a>
+          </article>
+        </div>
+        <div class="panel" style="margin-top:18px">
+          <div class="grid-3">
+            <div><span class="tag">2단계 · 주문량 안정 후</span><h3 style="margin-top:9px">20개입만 풀필먼트로 분리</h3><p class="muted">자체 당일출고가 안정되고 주말 주문 손실이 확인되면, 모든 상품이 아니라 대표상품 1개부터 외부 풀필먼트를 검토합니다.</p></div>
+            <div class="mini-card"><span class="num">01</span><div><h4>도입 판단 기준</h4><p>주말 주문, 당일출고 미준수, 포장 인력 병목, 채널별 주문량을 4주간 측정합니다.</p></div></div>
+            <div class="mini-card"><span class="num">02</span><div><h4>Cafe24 매일배송 검토</h4><p>공식 안내상 주력상품 1개만 맡길 수 있고 주말·공휴일 출고도 지원합니다. 보관·작업비와 품질 조건을 먼저 견적 비교합니다.</p><a class="source-link" href="https://support.cafe24.com/hc/ko/articles/53784611611801" target="_blank" rel="noopener">Cafe24 매일배송 공식 안내 ↗</a></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="channels" style="background:#f0f5ef">
+      <div class="wrap">
+        <span class="section-label">03 · Channel architecture</span>
+        <div class="section-head"><h2>채널마다 같은 일을 시키지 않습니다.</h2><p>주력 채널은 검색과 리뷰를 모으고, 다른 채널은 신규 고객·콘텐츠·행사·지역 단골이라는 고유 역할을 맡깁니다.</p></div>
+        <div class="channels">
+          <article class="channel featured"><div class="icon">🔎</div><span class="tag">핵심 판매처</span><h3>네이버 스마트스토어</h3><p>‘감태 오란다·오란다 선물세트·답례품’ 검색 수요와 리뷰를 20개입 한 상품에 집중합니다.</p><ul><li>대표상품 1개 + 2박스 묶음 + 단체문의</li><li>첫 이미지에 20개 구성과 당일출고</li><li>광고 전 리뷰·상세페이지·손익 점검</li></ul><div class="kpi">KPI · 검색 유입 / 전환율 / 리뷰 / 광고 주문당 비용</div></article>
+          <article class="channel featured"><div class="icon">▶</div><span class="tag">브랜드·영상 허브</span><h3>Cafe24 × YouTube Shopping</h3><p>Cafe24 상품을 유튜브 영상·Shorts·라이브에 태그하고, 주문·배송·CS를 쇼핑몰 운영 흐름과 연결합니다.</p><ul><li>브랜드 이야기·제조 과정·단체주문 랜딩</li><li>Google 판매자 계정·도메인·상품피드·전환태그 설정</li><li>크리에이터 파트너·특가·제휴수수료는 손익 내에서 테스트</li></ul><a class="source-link" href="https://support.cafe24.com/hc/ko/articles/51038642725017" target="_blank" rel="noopener">Cafe24 유튜브 쇼핑 공식 안내 ↗</a><div class="kpi">KPI · 영상 상품클릭 / 주문 / 크리에이터별 매출</div></article>
+          <article class="channel"><div class="icon">💳</div><span class="tag gold">신규 고객 실험</span><h3>토스쇼핑</h3><p>상품·배송·수익 구조가 안정된 뒤 20개입 한 상품으로 입점·CPC 광고를 소액 테스트합니다.</p><ul><li>최종판매가 = 상품가 + 배송비 − 셀러쿠폰</li><li>광고 클릭 후 7일 내 성과 주문 정책 확인</li><li>가격 경쟁보다 첫 구매 전환 상품으로 활용</li></ul><div class="channel-note">수수료·광고 면제 정책은 변동 가능하므로 집행일 관리자센터 기준으로 재확인합니다.</div><a class="source-link" href="https://shopping-docs.toss.im/ads" target="_blank" rel="noopener">토스쇼핑 광고 공식 안내 ↗</a><div class="kpi">KPI · 신규구매 / CPC / ROAS / 주문당 공헌이익</div></article>
+          <article class="channel"><div class="icon">💬</div><span class="tag gold">기간 한정 행사</span><h3>카카오 톡스토어·톡딜</h3><p>상시 할인 채널이 아니라 무료배송 묶음, 선물세트, 명절 예약판매 같은 ‘이유 있는 기간 한정딜’로 운영합니다.</p><ul><li>카카오톡 채널 연동과 친구 전용 쿠폰</li><li>톡딜 후보: 20개입 2박스·답례품</li><li>딜 종료 후 채널 친구를 재구매로 전환</li></ul><a class="source-link" href="https://kakaobusiness.gitbook.io/main/tool/talkstore/start" target="_blank" rel="noopener">톡스토어 공식 입점 가이드 ↗</a><div class="kpi">KPI · 딜 주문 / 신규 친구 / 30일 재구매</div></article>
+          <article class="channel"><div class="icon">🥕</div><span class="tag gold">하이퍼로컬</span><h3>당근 비즈프로필</h3><p>서산 이웃에게 제조·픽업·단체주문을 알리고 비즈프로필 단골을 ‘로컬 프라이빗 오퍼’로 관리합니다.</p><ul><li>금요일 생산·픽업, 지역 한정 쿠폰</li><li>병원·학원·기업·기관 간식 견적</li><li>개인 중고거래 글이 아닌 공식 비즈프로필 사용</li></ul><a class="source-link" href="https://business.daangn.com/business-profile/about" target="_blank" rel="noopener">당근 비즈프로필 공식 안내 ↗</a><div class="kpi">KPI · 단골 / 채팅 / 픽업 / 지역 단체문의</div></article>
+        </div>
+
+        <div class="panel" style="margin-top:18px">
+          <div class="grid-2">
+            <div><span class="tag">Cafe24 상세페이지 영상</span><h3 style="margin-top:9px">반응형 YouTube 삽입 코드</h3><p class="muted">상품 상세설명 HTML 편집 영역에 넣을 수 있는 기본 예시입니다. <b>VIDEO_ID</b>를 실제 영상 ID로 교체합니다. YouTube Shopping 상품 태그 기능은 별도로 Cafe24·YouTube 계정 연동이 필요합니다.</p></div>
+            <div class="codebox"><button class="copy-code" onclick="copyCode()">코드 복사</button><pre id="youtubeCode">&lt;div style="position:relative;width:100%;padding-top:56.25%;overflow:hidden;border-radius:16px;"&gt;
+  &lt;iframe
+    src="https://www.youtube.com/embed/VIDEO_ID"
+    title="감태당 감태 오란다 소개"
+    style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;</pre></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="crea

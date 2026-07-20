@@ -1,0 +1,39 @@
+·판매수수료가 있는 콘텐츠는 경제적 이해관계를 쉽게 보이게 표시합니다.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid"><div><h3>감태당 온라인 마케팅 성장보드</h3><p>온라인몰 운영·매출 증진 컨설팅 · 유정재</p></div><div class="fine">작성 기준일 2026.07.20 · 본 페이지의 수치 중 판매가·원가·광고비 예시는 현장 계산을 위한 가정값입니다. 실제 실행은 감태당의 관리자센터, 계약 수수료, 식품 표시사항, 생산·배송 여건을 확인한 뒤 확정합니다.</div></div>
+  </footer>
+
+  <div class="mobile-bar"><a href="#diagnosis">핵심 전략</a><button onclick="document.querySelector('#workshop').scrollIntoView({behavior:'smooth'})">실행 합의</button></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const STORE_KEY='gamtaedang-growth-board-v2';
+    const trackedIds=['ship1','ship2','ship3','ship4','ship5','r1','r2','r3','r4','r5','r6','r7','r8','r9','r10','r11','r12','r13','r14','r15','d1','d2','d3','d4','d5','d6','d7','d8','d9'];
+    const inputIds=['price','cost','shippingCost','labor','fee','adCost','goalOrders','launchDate','ownerNote','consultantNote'];
+    function $(id){return document.getElementById(id)}
+    function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');clearTimeout(window.__toast);window.__toast=setTimeout(()=>t.classList.remove('show'),2200)}
+    function toggleMenu(force){const p=$('menuPanel');const open=typeof force==='boolean'?force:!p.classList.contains('open');p.classList.toggle('open',open)}
+    function state(){const checks={};trackedIds.forEach(id=>checks[id]=!!$(id)?.checked);const inputs={};inputIds.forEach(id=>inputs[id]=$(id)?.value??'');return{checks,inputs,at:new Date().toISOString()}}
+    function applyState(s){if(!s)return;Object.entries(s.checks||{}).forEach(([id,v])=>{if($(id))$(id).checked=!!v});Object.entries(s.inputs||{}).forEach(([id,v])=>{if($(id))$(id).value=v});calc();updateDone()}
+    function saveAll(silent=false){localStorage.setItem(STORE_KEY,JSON.stringify(state()));$('saveState').textContent='마지막 저장: '+new Date().toLocaleString('ko-KR');if(!silent)toast('현재 실행안이 저장되었습니다')}
+    function decodeState(value){let v=decodeURIComponent(value).replace(/-/g,'+').replace(/_/g,'/');while(v.length%4)v+='=';const bin=atob(v);const bytes=Uint8Array.from(bin,c=>c.charCodeAt(0));return JSON.parse(new TextDecoder().decode(bytes))}
+    function loadAll(){let shared=false;try{const m=location.hash.match(/plan=([^&]+)/);if(m){applyState(decodeState(m[1]));shared=true;toast('공유된 실행안을 불러왔습니다')}}catch(e){console.warn(e)}if(!shared){try{applyState(JSON.parse(localStorage.getItem(STORE_KEY)||'null'))}catch(e){console.warn(e)}}}
+    function encodeState(obj){const bytes=new TextEncoder().encode(JSON.stringify(obj));let bin='';bytes.forEach(b=>bin+=String.fromCharCode(b));return btoa(bin).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
+    async function makeShareLink(){saveAll(true);const url=new URL(location.href);url.hash='plan='+encodeState(state());try{if(navigator.share){await navigator.share({title:'감태당 온라인 마케팅 실행안',text:'대표님과 함께 확인할 감태당 90일 온라인 마케팅 실행안입니다.',url:url.toString()});toast('공유 창을 열었습니다')}else{await navigator.clipboard.writeText(url.toString());toast('공유용 링크를 복사했습니다')}}catch(e){if(e.name!=='AbortError'){prompt('아래 링크를 복사해 주세요',url.toString())}}}
+    async function sharePage(){const url=location.href.split('#')[0];try{if(navigator.share){await navigator.share({title:document.title,text:'감태당 온라인 마케팅 성장보드',url})}else{await navigator.clipboard.writeText(url);toast('페이지 링크를 복사했습니다')}}catch(e){if(e.name!=='AbortError')toast('공유에 실패했습니다')}}
+    async function copyCode(){const txt=$('youtubeCode').innerText;try{await navigator.clipboard.writeText(txt);toast('YouTube 삽입 코드를 복사했습니다')}catch(e){prompt('코드를 복사해 주세요',txt)}}
+    function calc(){const price=+$('price').value||0,cost=+$('cost').value||0,ship=+$('shippingCost').value||0,labor=+$('labor').value||0,fee=+$('fee').value||0,ad=+$('adCost').value||0;const platform=price*fee/100;const pre=price-cost-ship-labor-platform;const post=pre-ad;const roas=pre>0?price/pre*100:0;const fmt=n=>Math.round(n).toLocaleString('ko-KR')+'원';$('preAdProfit').textContent=fmt(pre);$('postAdProfit').textContent=fmt(post);$('postAdProfit').style.color=post<0?'#ffb4a8':'white';$('breakEvenRoas').textContent=roas?Math.ceil(roas)+'%':'계산 불가'}
+    function updateDone(){const tasks=[...document.querySelectorAll('.action-checks input[type=checkbox]')];const done=tasks.filter(x=>x.checked).length;const pct=tasks.length?Math.round(done/tasks.length*100):0;$('doneText').textContent=pct+'% · '+done+'/'+tasks.length;$('doneBar').style.width=pct+'%'}
+    function summaryText(){const decisions=trackedIds.filter(id=>id.startsWith('d')&&$(id)?.checked).map(id=>document.querySelector('label[for="'+id+'"]')?.innerText).filter(Boolean);const completed=[...document.querySelectorAll('.action-checks input:checked')].map(x=>document.querySelector('label[for="'+x.id+'"] b')?.innerText).filter(Boolean);return `감태당 온라인 마케팅 실행 합의\n\n[우선순위]\n${decisions.length?decisions.map(x=>'• '+x).join('\n'):'• 미선택'}\n\n[90일 월 주문 목표]\n• ${$('goalOrders').value||'-'}건\n\n[첫 실행일]\n• ${$('launchDate').value||'-'}\n\n[완료/확정 항목]\n${completed.length?completed.map(x=>'• '+x).join('\n'):'• 없음'}\n\n[대표님 메모]\n${$('ownerNote').value||'-'}\n\n[컨설턴트 메모]\n${$('consultantNote').value||'-'}\n\n온라인몰 컨설턴트 유정재`}
+    async function copySummary(){try{await navigator.clipboard.writeText(summaryText());toast('합의 내용을 복사했습니다')}catch(e){prompt('아래 내용을 복사해 주세요',summaryText())}}
+    function resetPlan(){if(!confirm('체크와 메모, 계산값을 초기화할까요?'))return;localStorage.removeItem(STORE_KEY);history.replaceState(null,'',location.pathname+location.search);trackedIds.forEach(id=>{if($(id))$(id).checked=false});$('ownerNote').value='';$('consultantNote').value='';$('goalOrders').value='30';$('launchDate').value='';['price','cost','shippingCost','labor','fee','adCost'].forEach((id,i)=>$(id).value=['20000','9000','3000','1500','10','2000'][i]);calc();updateDone();toast('입력 내용을 초기화했습니다')}
+    document.addEventListener('change',e=>{if(e.target.matches('input,textarea,select')){calc();updateDone();saveAll(true)}});document.addEventListener('input',e=>{if(e.target.matches('input,textarea,select')){calc();updateDone();clearTimeout(window.__autosave);window.__autosave=setTimeout(()=>saveAll(true),350)}});
+    document.addEventListener('click',e=>{if(!e.target.closest('.menu-panel')&&!e.target.closest('.icon-btn'))toggleMenu(false)});
+    window.addEventListener('DOMContentLoaded',()=>{loadAll();calc();updateDone();if(!$('launchDate').value){const d=new Date();d.setDate(d.getDate()+1);$('launchDate').value=d.toISOString().slice(0,10)}saveAll(true)});
+  </script>
+</body>
+</html>

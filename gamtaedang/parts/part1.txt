@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#123a2d" />
+  <title>감태당 온라인 마케팅 성장보드 | 유정재 컨설팅</title>
+  <meta name="description" content="감태당 감태 오란다의 빠른배송·채널·콘텐츠·크리에이터·90일 실행 전략을 한 화면에서 확인하고 함께 합의하는 전용 페이지" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="감태당 온라인 마케팅 성장보드" />
+  <meta property="og:description" content="서산 감태가 온라인에서 발견되고, 오늘 출발하게 만드는 90일 실행안" />
+  <meta property="og:image" content="https://gottagitgethub.github.io/kfba-support-program-playbook/gamtaedang/og-gamtaedang.svg" />
+  <style>
+    :root{
+      --ink:#173029;--green:#123a2d;--green2:#1f6149;--mint:#dff0e7;--mint2:#eef8f2;
+      --cream:#fbf8ef;--paper:#fffef9;--gold:#c9912d;--soft-gold:#f6ead0;--line:#d9e1da;
+      --muted:#65736d;--danger:#a33a2e;--white:#fff;--shadow:0 18px 60px rgba(18,58,45,.11);
+      --radius:26px;--max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:82px}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;line-height:1.68;letter-spacing:-.02em}
+    a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}
+    .wrap{width:min(var(--max),calc(100% - 34px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(251,248,239,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(23,48,41,.09)}
+    .topbar-inner{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800}.brand-mark{width:38px;height:38px;border-radius:13px;background:var(--green);color:white;display:grid;place-items:center;box-shadow:0 7px 20px rgba(18,58,45,.22)}
+    .brand small{display:block;font-size:10px;letter-spacing:.12em;color:var(--green2);font-weight:800}.brand strong{display:block;font-size:16px;line-height:1.1}
+    .desktop-nav{display:flex;align-items:center;gap:7px}.desktop-nav a{font-size:14px;font-weight:700;padding:9px 12px;border-radius:999px}.desktop-nav a:hover{background:var(--mint)}
+    .top-actions{display:flex;gap:8px}.icon-btn,.share-btn{border:1px solid var(--line);background:rgba(255,255,255,.8);color:var(--ink);border-radius:13px;height:42px;padding:0 14px;display:flex;align-items:center;gap:7px;font-weight:800}.icon-btn{width:42px;padding:0;justify-content:center}.share-btn{background:var(--green);color:white;border-color:var(--green)}
+    .menu-panel{display:none;position:fixed;inset:70px 0 auto 0;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:var(--shadow);z-index:48;padding:20px}.menu-panel.open{display:block}.menu-panel a{display:block;padding:13px 4px;border-bottom:1px solid var(--line);font-weight:800}
+    .hero{position:relative;overflow:hidden;padding:70px 0 60px;background:radial-gradient(circle at 80% 20%,rgba(221,241,229,.95),transparent 32%),linear-gradient(180deg,#fffdf8 0%,#f6f7ed 100%)}
+    .hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(31,97,73,.13);border-radius:50%;right:-220px;top:-170px}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:54px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--mint);color:var(--green2);font-size:13px;font-weight:850;padding:8px 13px;border-radius:999px}.eyebrow i{width:8px;height:8px;background:#50b486;border-radius:50%;box-shadow:0 0 0 4px rgba(80,180,134,.16)}
+    h1{font-size:clamp(45px,7vw,82px);line-height:.98;letter-spacing:-.07em;margin:22px 0 25px;font-weight:730;max-width:740px}h1 em{font-style:normal;color:#2d8a61;text-decoration:underline;text-decoration-color:#a7d2b8;text-decoration-thickness:.12em;text-underline-offset:.04em}
+    .hero-copy{font-size:18px;color:#50635b;max-width:690px;margin:0 0 24px}.chips{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 28px}.chip{background:white;border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:13px;font-weight:800;box-shadow:0 6px 20px rgba(23,48,41,.04)}
+    .hero-buttons{display:flex;flex-wrap:wrap;gap:10px}.btn{border:1px solid var(--green);border-radius:14px;background:var(--green);color:white;padding:13px 18px;font-weight:850;display:inline-flex;align-items:center;gap:8px}.btn.secondary{background:white;color:var(--green);border-color:var(--line)}.btn.small{padding:9px 12px;font-size:13px;border-radius:11px}.btn.gold{background:var(--gold);border-color:var(--gold)}
+    .product-scene{min-height:500px;position:relative;display:grid;place-items:center}.sea-disc{position:absolute;width:390px;height:390px;border-radius:50%;background:linear-gradient(145deg,#2c7958,#0d3d2f);box-shadow:0 35px 70px rgba(18,58,45,.22)}.sea-disc:before,.sea-disc:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.18);border-radius:50%}.sea-disc:before{inset:40px}.sea-disc:after{inset:82px}
+    .pack{position:relative;width:245px;height:322px;background:#fffaf0;border:1px solid #d8ccb4;border-radius:18px 18px 28px 28px;transform:rotate(-6deg);box-shadow:0 26px 44px rgba(9,42,32,.27);padding:28px 24px;z-index:2}.pack:before{content:"";position:absolute;left:18px;right:18px;top:13px;border-top:2px dashed #d3c5aa}.pack h3{margin:0;color:var(--green);font-size:30px;line-height:1}.pack small{letter-spacing:.18em;color:#2d8a61;font-weight:850}.oranda-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:30px 10px}.ball{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 28%,#f6d67d 0 8%,#ca8d25 30%,#8a5414 72%,#60330c);box-shadow:inset -5px -8px 10px rgba(64,27,0,.25),0 4px 6px rgba(78,50,13,.18)}.pack p{font-size:12px;line-height:1.5;margin:0;color:#4f5c52;font-weight:700}
+    .float-card{position:absolute;background:white;border:1px solid var(--line);border-radius:16px;padding:12px 14px;box-shadow:0 14px 34px rgba(17,50,39,.16);z-index:3;font-size:12px;font-weight:800}.float-card strong{display:block;color:var(--green);font-size:15px}.fc1{left:2%;top:13%}.fc2{right:0;bottom:16%}
+    .metrics{margin-top:0;padding:0 0 68px}.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}.metric{padding:28px 26px;border-right:1px solid var(--line)}.metric:last-child{border:0}.

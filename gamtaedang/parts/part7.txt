@@ -1,0 +1,49 @@
+el><input id="cost" type="number" value="9000" min="0"></div>
+            <div class="field"><label for="shippingCost">판매자 부담 배송비(원)</label><input id="shippingCost" type="number" value="3000" min="0"></div>
+            <div class="field"><label for="labor">주문당 인건비(원)</label><input id="labor" type="number" value="1500" min="0"></div>
+            <div class="field"><label for="fee">플랫폼·결제 수수료(%)</label><input id="fee" type="number" value="10" min="0" step="0.1"></div>
+            <div class="field"><label for="adCost">주문당 광고비(원)</label><input id="adCost" type="number" value="2000" min="0"></div>
+          </div><div class="result-box"><div><small>광고 전 공헌이익</small><strong id="preAdProfit">0원</strong></div><div><small>광고 후 공헌이익</small><strong id="postAdProfit">0원</strong></div><div class="wide"><small>손익분기 ROAS</small><strong id="breakEvenRoas">0%</strong></div></div><div class="notice" style="margin-top:14px">대표님이 말씀하신 36%가 재료·포장 기준이라면, 인건비·수수료·배송비·쿠폰·광고비를 넣은 뒤 실제 허용 광고비를 다시 결정해야 합니다.</div></article>
+          <article class="panel"><h3>3단계 온라인 목표</h3><div class="goal-grid"><div class="goal"><small>BASE</small><strong>10건</strong><span>최근 3개월</span></div><div class="goal"><small>1차 목표</small><strong>월 10건</strong><span>대표상품 검증</span></div><div class="goal"><small>2차 목표</small><strong>월 30건</strong><span>성과 채널 확대</span></div></div><div class="chart"><div class="bar" style="height:18%"><span>현재</span><small>기본선</small></div><div class="bar" style="height:34%"><span>월 10</span><small>30일</small></div><div class="bar" style="height:64%"><span>월 20</span><small>60일</small></div><div class="bar" style="height:100%"><span>월 30</span><small>90일</small></div></div><div class="grid-2" style="margin-top:35px"><div class="mini-card" style="display:block"><b>매주 확인</b><p>방문자 · 전환율 · 객단가 · 주문당 광고비 · 공헌이익</p></div><div class="mini-card" style="display:block"><b>매월 확인</b><p>재구매율 · 단체문의 · 채널별 순이익 · 출고 준수율</p></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workshop" class="workshop">
+      <div class="wrap">
+        <span class="section-label">08 · Shared action board</span>
+        <div class="section-head"><h2>대표님과 오늘 결정할 것</h2><p>컨설팅 현장에서 체크하고 메모한 뒤, 공유용 링크를 만들어 카카오톡으로 서로 전달할 수 있습니다.</p></div>
+        <div class="workshop-grid">
+          <article class="panel"><h3>실행 우선순위 선택</h3><div class="decision-grid">
+            <span class="decision"><input id="d1" type="checkbox"><label for="d1">20개입 대표상품</label></span>
+            <span class="decision"><input id="d2" type="checkbox"><label for="d2">13시 당일출고</label></span>
+            <span class="decision"><input id="d3" type="checkbox"><label for="d3">상세페이지 개선</label></span>
+            <span class="decision"><input id="d4" type="checkbox"><label for="d4">스마트스토어</label></span>
+            <span class="decision"><input id="d5" type="checkbox"><label for="d5">Cafe24·YouTube</label></span>
+            <span class="decision"><input id="d6" type="checkbox"><label for="d6">톡딜</label></span>
+            <span class="decision"><input id="d7" type="checkbox"><label for="d7">토스쇼핑</label></span>
+            <span class="decision"><input id="d8" type="checkbox"><label for="d8">당근 로컬마케팅</label></span>
+            <span class="decision"><input id="d9" type="checkbox"><label for="d9">크리에이터 시딩</label></span>
+          </div><div class="field-grid" style="margin-top:18px"><div class="field"><label for="goalOrders">90일 월 주문 목표</label><input id="goalOrders" type="number" value="30"></div><div class="field"><label for="launchDate">첫 실행일</label><input id="launchDate" type="date"></div></div></article>
+          <article class="panel"><label class="notes-label" for="ownerNote">대표님 메모</label><textarea id="ownerNote" class="notes" placeholder="예: 20개입 가격과 포장부터 정하고, 금요일 당근 픽업을 시험해보기"></textarea><label class="notes-label second" for="consultantNote">컨설턴트 합의 메모</label><textarea id="consultantNote" class="notes" placeholder="예: 다음 방문 전 상세페이지 상단 시안과 원가표 완성"></textarea></article>
+        </div>
+        <div class="workshop-actions"><button class="btn" onclick="saveAll()">현재 내용 저장</button><button class="btn gold" onclick="makeShareLink()">공유용 링크 만들기</button><button class="btn secondary" onclick="copySummary()">합의 내용 복사</button><button class="btn secondary" onclick="resetPlan()">입력 초기화</button></div>
+        <div class="save-state" id="saveState">이 브라우저에 자동 저장됩니다.</div>
+        <div class="privacy-note">※ 공유용 링크에는 체크 상태와 입력 메모가 URL에 포함됩니다. 개인정보·매출 원장·비밀번호 등 민감한 정보는 적지 마세요. 실시간 공동편집이 아니라, 링크를 열었을 때 합의 상태를 재현하는 방식입니다.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <span class="section-label">Reference & compliance</span>
+        <div class="section-head"><h2>실행 전 공식 정책을<br>한 번 더 확인합니다.</h2><p>플랫폼 기능·수수료·입점 조건·노출 기준은 바뀔 수 있습니다. 아래 공식 문서와 각 관리자센터의 최신 화면을 기준으로 최종 실행합니다.</p></div>
+        <div class="sources">
+          <article class="source"><b>Cafe24 유튜브 쇼핑</b><p>상품피드·계정 연결·주문관리·크리에이터 제휴 관련 공식 안내</p><a href="https://support.cafe24.com/hc/ko/articles/51038642725017" target="_blank" rel="noopener">공식 문서 열기 ↗</a></article>
+          <article class="source"><b>토스쇼핑</b><p>입점·광고·배송·가격·정산 정책은 집행 시점에 재확인</p><a href="https://shopping-docs.toss.im/" target="_blank" rel="noopener">공식 문서 열기 ↗</a></article>
+          <article class="source"><b>카카오톡 스토어·광고</b><p>입점, 채널 연동, 톡딜·쇼핑 광고 운영 기준 확인</p><a href="https://kakaobusiness.gitbook.io/main/tool/talkstore/start" target="_blank" rel="noopener">공식 문서 열기 ↗</a></article>
+          <article class="source"><b>당근 비즈프로필</b><p>소식·쿠폰·채팅·단골관리·지역 광고 기능 안내</p><a href="https://business.daangn.com/business-profile/about" target="_blank" rel="noopener">공식 문서 열기 ↗</a></article>
+          <article class="source"><b>Cafe24 매일배송</b><p>주력상품 1개부터 검토 가능한 풀필먼트·주말/공휴일 출고 안내</p><a href="https://support.cafe24.com/hc/ko/articles/53784611611801" target="_blank" rel="noopener">공식 문서 열기 ↗</a></article>
+          <article class="source"><b>YouTube Shopping 제휴</b><p>상품 태그, 크리에이터 자격, 수수료 및 유료 프로모션 공개 원칙</p><a href="https://support.google.com/youtube/answer/13376398?hl=ko" target="_blank" rel="noopener">공식 문서 열기 ↗</a></article>
+          <article class="source"><b>표시광고 준법</b><p>식품 효능 과장 금지와 인플루언서 경제적 이해관계 공개 기준</p><a href="https://www.mfds.go.kr/wpge/m_661/de010410l001.do?external=3rd_Party" target="_blank" rel="noopener">식약처 안내 ↗</a> · <a href="https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&amp;key=12&amp;nttSn=43669" target="_blank" rel="noopener">공정위 안내 ↗</a></article>
+        </div>
+        <div class="notice red" style="margin-top:18px"><b>식품·인플루언서 준법 원칙</b><br>일반식품을 질병 예방·치료, 다이어트, 건강기능식품처럼 오인시키는 표현을 사용하지 않습니다. 제품 제공·원고료

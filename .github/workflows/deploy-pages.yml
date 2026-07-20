@@ -3,6 +3,8 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,11 +13,28 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Validate Gamtaedang site files
+        run: |
+          test -f gamtaedang/index.html
+          test -f gamtaedang/app.js
+          test -f gamtaedang/style-a.css
+          test -f gamtaedang/style-b.css
+          test -f gamtaedang/body-1.html
+          test -f gamtaedang/body-2.html
+          test -f gamtaedang/body-3.html
+
   deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
